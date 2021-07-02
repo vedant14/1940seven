@@ -66,7 +66,6 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-source-airtable`,
       options: {

@@ -18,7 +18,6 @@
     "gatsby-plugin-react-helmet": "^4.5.0",
     "gatsby-plugin-sharp": "^3.5.0",
     "gatsby-plugin-styled-components": "^4.5.0",
-    "gatsby-plugin-twitter": "^3.5.0",
     "gatsby-source-airtable": "^2.1.1",
     "gatsby-source-filesystem": "^3.5.0",
     "gatsby-transformer-remark": "^4.2.0",
