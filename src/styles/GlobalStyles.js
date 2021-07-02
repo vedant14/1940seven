@@ -1,12 +1,9 @@
 import { createGlobalStyle } from "styled-components"
 
 export const colors = {
-  primaryBlack: "#000000",
-  washedBlack: "#635C60",
-  primary: "#5C48D7",
-  secondary: "#EA714A",
-  washedGrey: "#EBEEF1",
   white: "#FFFFFF",
+  dark: "#030C10",
+  violet: "#914FFF",
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -16,57 +13,55 @@ export const GlobalStyles = createGlobalStyle`
 
 
   body {
-    background-color: ${colors.white}; 
+    background-color: ${colors.dark}; 
+    color: ${colors.white};
     margin: 0;
     padding: 0;
   }
 
-  main {
-    margin-right: auto;
-    margin-left: auto;
-    min-height: 80vh;
-  }
-
 
   h1{
-    font-family: 'Epilogue', sans-serif;    
+    font-family: 'Poppins', sans-serif;    
     font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 24px;
     text-transform: capitalize;
     @media screen and (min-width: 768px) {
-      font-size: 40px;
+      font-size: 70px;
+      line-height: 70px;
     }
   }
 
   h2{
-    font-family: 'Epilogue', sans-serif;    
+    font-family: 'Poppins', sans-serif;    
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     @media screen and (min-width: 768px) {
-      font-size: 24px;
+      font-size: 50px;
+      line-height: 52px;
     }
   }
 
   h3{
-    font-family: 'Epilogue', sans-serif;    
+    font-family: 'Poppins', sans-serif;    
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     @media screen and (min-width: 768px) {
-      font-size: 20px;
+      font-size: 42px;
+      line-height: 47px;
     }
   }
 
   h4{
-    font-family: 'Epilogue', sans-serif;    
+    font-family: 'Poppins', sans-serif;    
     font-style: normal;
-    font-weight: normal;
     font-size: 14px;
+    font-weight: 300;
     @media screen and (min-width: 768px) {
-      font-weight: 500;
-      font-size: 18px;
+      font-size: 30px;
+      line-height: 40px;
     }
   }
 
@@ -74,27 +69,33 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
-    color: ${colors.washedBlack};
     font-size: 14px;
     line-height: 14px;
     @media screen and (min-width: 768px) {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 20px;
     }
   }
 
-  small{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 14px;
-    line-height: 16px;
+  strong {
+    font-weight: 500;
   }
 
   a {
     text-decoration: none;
+    border-bottom: 2px solid ${colors.violet};
+    padding-bottom: 5px;
+    color: ${colors.white};
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px; 
+    transition: .35s ease-out-quartz;
     &:hover {
-     text-decoration: none; 
+      color: ${colors.white};
+      border-bottom: 4px solid ${colors.violet};
+      padding-bottom: 3px;
     }
   }
 

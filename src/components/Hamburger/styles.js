@@ -5,15 +5,16 @@ export const HamburgerIcon = styled.div`
   width: 30px;
   z-index: 1000;
   cursor: pointer;
+  margin: auto 0px auto auto;
 
   :after,
   :before,
   div {
-    background-color: black;
+    background-color: white;
     border-radius: 2px;
     content: "";
     display: block;
-    height: 5px;
+    height: 3px;
     margin: 5px 0;
     transition: all 0.2s ease-in-out;
   }
@@ -21,13 +22,11 @@ export const HamburgerIcon = styled.div`
   :before {
     transform: ${props =>
       props.menuOpen ? "translateY(10px) rotate(45deg)" : ""};
-    background-color: ${props => (props.menuOpen ? "white" : "black")};
   }
 
   :after {
     transform: ${props =>
       props.menuOpen ? "translateY(-10px) rotate(-45deg)" : ""};
-    background-color: ${props => (props.menuOpen ? "white" : "black")};
   }
 
   div {

@@ -1,13 +1,13 @@
 ---
 type: "config"
 menu:
+  - id: "menu-item-1"
+    name: "Home"
+    link: "Home"
   - id: "menu-item-2"
-    name: "Details"
-    link: "Details"
-  - id: "menu-item-3"
-    name: "Is it for You?"
+    name: "About Us"
     link: "WhoIsThisFor"
-  - id: "menu-item-4"
-    name: "About Me"
-    link: "AboutMe"
+  - id: "menu-item-3"
+    name: "Learn More"
+    link: "Footer"
 ---

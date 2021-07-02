@@ -3,7 +3,7 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Personal finance Course by Abhishek Agarwal`,
+    title: ``,
     description: `If you want to work on your personal financial planning this course was created for you.`,
     author: `Abhishek Agarwal`,
   },

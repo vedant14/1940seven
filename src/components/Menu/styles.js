@@ -6,7 +6,7 @@ export const Nav = styled.ul`
   list-style-type: none;
   padding: 0;
   text-transform: uppercase;
-  margin: 10px 0px 10px 120px;
+  margin: 10px 0px 10px auto;
   a {
     text-decoration: none;
     color: ${colors.washedBlack};
@@ -38,8 +38,9 @@ export const Nav = styled.ul`
       font-weight: 800;
     }
     :last-child {
-      margin-right: 250px;
+      margin-right: 0px;
     }
+
     :hover {
       color: ${colors.primaryBlack};
     }

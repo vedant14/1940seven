@@ -10,8 +10,8 @@ export const OverrideGlobalStyle = createGlobalStyle`
 export const Wrapper = styled.div`
   display: block;
   position: fixed;
-  background: ${colors.primary};
-  left: ${props => (props.menuOpen ? "0px" : "-100%")};
+  background: ${colors.white};
+  right: ${props => (props.menuOpen ? "0px" : "-100%")};
   width: 100%;
   height: 100%;
   top: 0px;
@@ -52,39 +52,5 @@ export const NavScroll = styled(Scrollspy)`
       top: 100px;
       line-height: 60px;
     }
-  }
-`
-export const PrimaryButton = styled.button`
-  background: ${colors.white};
-  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  > h4 {
-    color: ${colors.primary};
-    font-size: 20px;
-    padding: 10px 9px;
-    margin: 0px;
-    text-transform: capitalize;
-  }
-`
-
-export const SecondaryButton = styled.button`
-  background: ${colors.white};
-  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid ${colors.primary};
-  > h4 {
-    color: ${colors.primary};
-    font-size: 20px;
-    padding: 10px 9px;
-    margin: 0px;
-  }
-  &:hover {
-    background: ${colors.secondary};
-    border: 1px solid ${colors.secondary};
-    > h4 {
-      color: ${colors.white};
-    }
-  }
-  &:focus {
-    outline: none;
   }
 `

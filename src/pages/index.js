@@ -5,7 +5,7 @@ import {
 	SEO,
 	Hero,
 	Apply,
-	Story,
+	Merch,
 	Details,
 	WhoFor,
 	Strip,
@@ -18,14 +18,10 @@ import {
 const IndexPage = () => {
 	return (
 		<Layout>
-			<SEO
-				title="Personal Finance Course by Abhishek Agrawal"
-				description="Personal Finance Course by Abhishek Agrawal"
-			/>
+			<SEO title="1940Seven" description="By Vedant and Mandar" />
 			<Header />
 			<Hero />
-			<Apply />
-			<Story />
+			<Merch />
 			<Details />
 			<WhoFor />
 			<Author />

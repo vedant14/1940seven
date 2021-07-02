@@ -17,30 +17,14 @@ export function MobileMenu({ menuOpen, items, setMenuOpen }) {
       <Wrapper menuOpen={menuOpen}>
         <NavScroll
           items={items.map(item => item.link)}
-          currentClassName="is-current-mobile"
+          currentClassName="is-current"
           offset={-64}
         >
           {items.map(item => (
-            <li key={item.id} onClick={() => setMenuOpen(false)}>
+            <li key={item.id}>
               <AnchorLink href={`#${item.link}`}>{item.name}</AnchorLink>
             </li>
           ))}
-          <li>
-            <a
-              href="https://www.instamojo.com/@AggyAbhishek/l141f83f9226c47549fa38b651e0641b7/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <PrimaryButton>
-                <h4>
-                  Get the course {"  "}
-                  <span role="img" aria-label="rocket">
-                    🚀
-                  </span>
-                </h4>
-              </PrimaryButton>
-            </a>
-          </li>
         </NavScroll>
       </Wrapper>
     </>
