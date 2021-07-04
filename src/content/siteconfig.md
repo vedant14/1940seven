@@ -6,7 +6,7 @@ menu:
     link: "Home"
   - id: "menu-item-2"
     name: "About Us"
-    link: "WhoIsThisFor"
+    link: "About"
   - id: "menu-item-3"
     name: "Learn More"
     link: "Footer"

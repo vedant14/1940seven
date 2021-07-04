@@ -21,7 +21,6 @@ export const Nav = styled.ul`
     font-size: 18px;
     line-height: 18px;
     padding: 15px 0px;
-
     @media screen and (min-width: 1150px) {
       margin-right: 30px;
     }
@@ -34,15 +33,8 @@ export const Nav = styled.ul`
     @media screen and (min-width: 1400px) {
       margin-right: 95px;
     }
-    .active {
-      font-weight: 800;
-    }
     :last-child {
       margin-right: 0px;
-    }
-
-    :hover {
-      color: ${colors.primaryBlack};
     }
   }
 

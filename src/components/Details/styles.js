@@ -1,48 +1,22 @@
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
-import { Container } from "react-bootstrap"
 
-export const DetailsWrapper = styled(Container)`
-	border: 1px solid ${colors.primary};
+export const Wrapper = styled.div`
+	margin: 200px 90px;
 	display: grid;
-	grid-template-columns: 1fr;
-	@media (min-width: 768px) {
-		grid-template: 3fr / 1fr 2fr;
-	}
-	> div:first-child {
-		margin: 60px 20px 00px 20px;
-		text-align: center;
-		@media (min-width: 768px) {
-			text-align: left;
-			padding-left: 30px;
-			margin: auto;
-		}
-		@media (min-width: 1024px) {
-			padding-left: 50px;
-		}
-	}
-	> div:last-child {
-		> ul {
-			padding-inline-start: 30px;
-			> li {
-				margin: 30px 10px 30px 0px;
-			}
-		}
-		@media (min-width: 768px) {
-			margin: 30px auto;
-			> ul {
-				padding-inline-start: 100px;
-				> li {
-					margin: 30px 0;
-				}
-			}
-		}
+	position: relative;
+	grid-template-columns: 1fr 1fr 1fr;
+	> div > p {
+		margin-top: 16px;
 	}
 `
 
-export const MobileWrapper = styled.div`
-	margin: 20px;
-	@media (min-width: 768px) {
-		margin: auto;
-	}
+export const Big = styled.span`
+	font-family: "Poppins", sans-serif;
+	position: absolute;
+	top: -110px;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 126px;
+	color: rgba(207, 179, 255, 0.2);
 `

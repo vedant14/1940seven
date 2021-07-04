@@ -4,14 +4,12 @@ import {
 	Header,
 	SEO,
 	Hero,
-	Apply,
 	Merch,
+	LineUp,
 	Details,
-	WhoFor,
-	Strip,
-	Author,
-	Testimonial,
-	FAQ,
+	ValueStrip,
+	About,
+	Action,
 	Footer,
 } from "../components"
 
@@ -22,12 +20,11 @@ const IndexPage = () => {
 			<Header />
 			<Hero />
 			<Merch />
+			<LineUp />
+			<ValueStrip />
 			<Details />
-			<WhoFor />
-			<Author />
-			<Strip />
-			<Testimonial />
-			<FAQ />
+			<About />
+			<Action />
 			<Footer />
 		</Layout>
 	)

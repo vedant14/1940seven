@@ -2,71 +2,33 @@ import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
 
 export const FooterWrapper = styled.div`
-	background: ${colors.washedGrey};
-	margin-top: 50px;
+	background: linear-gradient(180deg, #062b68 0%, #914fff 100%);
 	> div {
 		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 5px;
-		grid-template-areas:
-			"social"
-			"title"
-			"disclaimer";
-		@media (min-width: 768px) {
-			grid-template-columns: 1fr 1fr;
-			grid-template-areas:
-				"title social"
-				"disclaimer disclaimer";
-		}
+		grid-template-columns: 1fr 1fr;
+		margin: 0px 90px;
+		> div {
+			> img#Logo {
+				margin-top: 100px;
+			}
 
-		> div#social {
-			grid-area: social;
-			margin: auto;
-			padding: 30px 0px;
-			@media (min-width: 768px) {
-				padding: 50px 0px;
-			}
-			> a > img {
-				width: 30px;
-				margin: 8px;
-				@media (min-width: 768px) {
-					width: 40px;
-					margin: 10px;
-				}
-			}
-			> a:first-child {
-				> img {
-					margin-left: 0px;
-					width: 100px;
-					@media (min-width: 768px) {
-						width: 120px;
+			> div#social {
+				display: flex;
+				margin: 15px 0px 80px 0px;
+				> a {
+					border: none;
+					> img {
+						height: 21px;
+						margin: 5px 10px;
 					}
 				}
 			}
-			> a:last-child {
-				> img {
-					margin-right: 0px;
-				}
-			}
 		}
-		> div#disclaimer {
-			border-top: 1px dotted ${colors.primaryBlack};
-			padding-top: 15px;
-			grid-area: disclaimer;
-			> p {
-				font-size: 0.9rem;
-				font-style: italic;
-			}
-		}
-		> div#title {
-			margin: 10px auto;
-			@media (min-width: 768px) {
-				margin: auto 0px;
-			}
-			line-height: 14px;
-			grid-area: title;
-			> p {
-				margin: 0px;
+		> div#links {
+			margin: auto;
+			> a {
+				border: none;
+				margin-right: 25px;
 			}
 		}
 	}

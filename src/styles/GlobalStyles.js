@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components"
 export const colors = {
   white: "#FFFFFF",
   dark: "#030C10",
+  grey: "#D9D6D9",
   violet: "#914FFF",
 }
 
@@ -25,7 +26,6 @@ export const GlobalStyles = createGlobalStyle`
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    text-transform: capitalize;
     @media screen and (min-width: 768px) {
       font-size: 70px;
       line-height: 70px;
@@ -73,12 +73,21 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 14px;
     @media screen and (min-width: 768px) {
       font-size: 18px;
-      line-height: 20px;
+      line-height: 28px;
     }
   }
 
   strong {
     font-weight: 500;
+  }
+
+  small {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom: 2px solid ${colors.violet};
+    padding-bottom: 2px;
   }
 
   a {
@@ -91,7 +100,8 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: normal;
     font-size: 20px;
     line-height: 20px; 
-    transition: .35s ease-out-quartz;
+    transition-duration: 0.35s;
+    transition-timing-function: ease;
     &:hover {
       color: ${colors.white};
       border-bottom: 4px solid ${colors.violet};
@@ -99,23 +109,18 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  li {
-    color: ${colors.washedBlack};
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    > strong{
-      color: ${colors.primaryBlack};
-    }
-    @media screen and (min-width: 768px) {
-      font-size: 16px;
-      line-height: 20px;
-    }
+  .violet {
+    color: ${colors.violet};
   }
 
+  .underline{
+    border-bottom: 2px solid ${colors.violet};
+    padding-bottom: 5px;
+  }
   .is-current{
     > a {
-      color: ${colors.primaryBlack} !important;
+      border-bottom: 4px solid ${colors.violet};
+      padding-bottom: 3px;
     }
   }
   
