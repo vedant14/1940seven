@@ -14,6 +14,9 @@ export const FooterWrapper = styled.div`
 
 			> div#social {
 				display: flex;
+				> p {
+					margin: 0px;
+				}
 				margin: 15px 0px 80px 0px;
 				> a {
 					border: none;

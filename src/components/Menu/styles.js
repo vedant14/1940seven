@@ -6,7 +6,7 @@ export const Nav = styled.ul`
   list-style-type: none;
   padding: 0;
   text-transform: uppercase;
-  margin: 10px 0px 10px auto;
+  margin: 10px auto;
   a {
     text-decoration: none;
     color: ${colors.washedBlack};
