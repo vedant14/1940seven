@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { FooterWrapper } from "./styles"
-import Twitter from "../../images/social/twitter.png"
-import Instagram from "../../images/social/instagram.png"
+import TwitterImage from "../../images/social/twitter.png"
+import InstagramImage from "../../images/social/instagram.png"
 import Logo from "../../images/logo/logo-white.png"
 export function Footer() {
 	return (
@@ -16,13 +16,13 @@ export function Footer() {
 							href="https://www.w3schools.com/css/css3_2dtransforms.asp"
 							target="_blank"
 						>
-							<img src={Twitter} alt="Twitter" />
+							<img src={TwitterImage} alt="Twitter" />
 						</a>
 						<a
 							href="https://www.w3schools.com/css/css3_2dtransforms.asp"
 							target="_blank"
 						>
-							<img src={Instagram} alt="Instagram" />
+							<img src={InstagramImage} alt="Instagram" />
 						</a>
 					</div>
 				</div>
