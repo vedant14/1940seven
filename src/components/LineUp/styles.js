@@ -11,9 +11,13 @@ export const Wrapper = styled.div`
 export const CardList = styled.div`
 	display: grid;
 	margin-top: 80px;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "first" "card";
 	grid-gap: 30px;
-	grid-template-areas: "first first card";
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: "first first card";
+	}
 `
 
 export const Card = styled.div`

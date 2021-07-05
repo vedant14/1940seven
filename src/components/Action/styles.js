@@ -1,11 +1,15 @@
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
 export const Wrapper = styled.div`
-	margin: 150px 90px 200px 90px;
+	margin: 100px 60px;
+	@media screen and (min-width: 768px) {
+		margin: 150px 90px 200px 90px;
+	}
 	text-align: center;
 	> h2 {
 		margin: auto;
 		width: 1000px;
+		max-width: 100%;
 	}
 `
 
@@ -15,7 +19,9 @@ export const Button = styled.div`
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
-	width: 300px;
+	@media screen and (min-width: 768px) {
+		width: 300px;
+	}
 	margin: 40px auto;
 	border-radius: 10px;
 	transition-duration: 0.35s;
