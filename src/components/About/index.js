@@ -6,7 +6,7 @@ export function About() {
 	return (
 		<>
 			<Scroll id="About" />
-			<Wrapper>
+			<Wrapper className="Container">
 				<div>
 					<h2>
 						Why does{" "}

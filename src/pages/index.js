@@ -22,8 +22,8 @@ const IndexPage = () => {
 			<Merch />
 			<LineUp />
 			<ValueStrip />
-			<Details />
 			<About />
+			<Details />
 			<Action />
 			<Footer />
 		</Layout>

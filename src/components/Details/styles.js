@@ -3,14 +3,16 @@ import { colors } from "../../styles/GlobalStyles"
 
 export const Wrapper = styled.div`
 	display: grid;
+	margin-top: 0px;
 	position: relative;
 	grid-template-columns: 1fr;
 	grid-gap: 10px;
 	@media screen and (min-width: 768px) {
-		margin: 200px 90px;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	margin: 100px 30px;
+	@media screen and (min-width: 1920px) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 	> div > p {
 		margin-top: -19px;
 	}
@@ -20,6 +22,10 @@ export const Big = styled.span`
 	font-family: "Poppins", sans-serif;
 	position: absolute;
 	display: none;
+	cursor: default;
+	user-select: none;
+	--webkit-user-select: none;
+
 	@media screen and (min-width: 768px) {
 		display: block;
 	}

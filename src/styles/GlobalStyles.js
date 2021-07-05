@@ -111,7 +111,22 @@ export const GlobalStyles = createGlobalStyle`
 
   .violet {
     color: ${colors.violet};
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
   }
+
+
+
+  .Container {
+    margin: auto 30px;
+    @media screen and (min-width: 768px) {
+      margin: auto 90px;
+    }
+    @media screen and (min-width: 1920px) {
+      margin: 200px 400px;
+    }
+  }
+
 
   .underline{
     border-bottom: 2px solid ${colors.violet};

@@ -7,6 +7,13 @@ export const Nav = styled.ul`
   padding: 0;
   text-transform: uppercase;
   margin: 10px auto;
+  @media screen and (min-width: 728px) {
+    margin: 10px 200px 10px auto;
+  }
+  @media screen and (min-width: 1920px) {
+    margin: 10px 560px 10px auto;
+  }
+
   a {
     text-decoration: none;
     color: ${colors.washedBlack};

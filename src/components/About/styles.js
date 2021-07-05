@@ -1,15 +1,15 @@
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
 export const Wrapper = styled.div`
-	margin: 10px 30px;
-	@media screen and (min-width: 768px) {
-		margin: 10px 90px;
-	}
 	display: grid;
+	margin-top: 100px;
 	position: relative;
 	grid-template-columns: 1fr;
 	@media screen and (min-width: 768px) {
 		grid-template-columns: 1.5fr 1fr;
+	}
+	@media screen and (min-width: 1920px) {
+		grid-template-columns: 1fr 1fr;
 	}
 	grid-gap: 30px;
 	> div:first-child {
@@ -22,6 +22,10 @@ export const Wrapper = styled.div`
 		position: relative;
 		> img {
 			max-width: 100%;
+			float: right;
+			@media screen and (min-width: 768px) {
+				width: 600px;
+			}
 		}
 	}
 `

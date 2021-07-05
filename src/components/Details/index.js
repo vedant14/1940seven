@@ -3,7 +3,7 @@ import { Wrapper, Big } from "./styles"
 
 export function Details() {
 	return (
-		<Wrapper>
+		<Wrapper className="Container">
 			<div>
 				<Big>01</Big>
 				<h3>

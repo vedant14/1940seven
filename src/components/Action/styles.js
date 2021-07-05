@@ -1,11 +1,9 @@
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
 export const Wrapper = styled.div`
-	margin: 100px 60px;
-	@media screen and (min-width: 768px) {
-		margin: 150px 90px 200px 90px;
-	}
 	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 200px;
 	> h2 {
 		margin: auto;
 		width: 1000px;

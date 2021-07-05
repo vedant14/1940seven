@@ -3,7 +3,7 @@ import { Wrapper, Button } from "./styles"
 
 export function Action() {
 	return (
-		<Wrapper>
+		<Wrapper className="Container">
 			<h2>
 				Do you want 1940<span className="violet">seven</span> to add your
 				favorite creator to our line up?

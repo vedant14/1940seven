@@ -5,7 +5,7 @@ import SecondCreator from "../../images/creators/second.png"
 import Lock from "../../images/icons/lock.png"
 export function LineUp() {
 	return (
-		<Wrapper>
+		<Wrapper className="Container">
 			<h2>Creator Line Up</h2>
 			<p>
 				We are collaborating with some of the best creators around the world.

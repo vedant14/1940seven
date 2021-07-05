@@ -11,6 +11,9 @@ export const HeaderWrapper = styled.header`
   @media screen and (min-width: 768px) {
     padding: 10px 90px;
   }
+  @media screen and (min-width: 1920px) {
+    padding: 10px 280px;
+  }
 `
 
 export const LogoWrapper = styled.img`

@@ -8,10 +8,11 @@ export function Merch() {
 	return (
 		<>
 			<Scroll id="Learn" />
-			<Wrapper>
+			<Wrapper className="Container">
 				<div>
+					<h2>Merch heading</h2>
 					<h4>Now you can Buy merchandise from your favorite creators</h4>
-					<h2>In India. In INR. </h2>
+					<h3>In India. In INR. </h3>
 					<AnchorLink href="#About">Learn more</AnchorLink>
 				</div>
 				<img src={MerchImage} alt="Merch" id="Merch" />

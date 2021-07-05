@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
 
 export const Wrapper = styled.div`
-	margin: 200px 90px;
+	margin-top: 200px;
 	> p {
 		margin-top: 10px;
 	}
@@ -13,10 +13,15 @@ export const CardList = styled.div`
 	margin-top: 80px;
 	grid-template-columns: 1fr;
 	grid-template-areas: "first" "card";
-	grid-gap: 30px;
 	@media screen and (min-width: 768px) {
+		grid-gap: 30px;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-areas: "first first card";
+	}
+	@media screen and (min-width: 1920px) {
+		grid-gap: 90px;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "first first first card card";
 	}
 `
 
