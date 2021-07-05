@@ -5,6 +5,8 @@ export const HeroWrapper = styled.div`
 	background-image: url(${Banner});
 	object-fit: cover;
 	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
 `
 
 export const HeaderText = styled.h1`

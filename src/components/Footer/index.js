@@ -30,9 +30,9 @@ export function Footer() {
 				</div>
 				<div id="links">
 					<Link to="/">Home</Link>
-					<Link to="/">T&Cs</Link>
-					<Link to="/">Privacy Policy</Link>
-					<Link to="/">Contact Us</Link>
+					<Link to="/terms">T&Cs</Link>
+					<Link to="/privacy-policy">Privacy Policy</Link>
+					<Link to="/refund-policy">Refund Policy</Link>
 				</div>
 			</div>
 		</FooterWrapper>

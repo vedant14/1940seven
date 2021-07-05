@@ -8,10 +8,7 @@ export function Action() {
 				Do you want 1940<span className="violet">seven</span> to add your
 				favorite creator to our line up?
 			</h2>
-			<a
-				href="https://www.w3schools.com/css/css3_transitions.asp"
-				target="_blank"
-			>
+			<a href="https://ht7fx6eguht.typeform.com/to/IRKu9P6K" target="_blank">
 				<Button>Click here to vote!</Button>
 			</a>
 		</Wrapper>

@@ -23,7 +23,7 @@ export const CardList = styled.div`
 export const Card = styled.div`
 	border: 2px solid ${colors.violet};
 	position: relative;
-	overflow: clip;
+	overflow: hidden;
 	height: 380px;
 	border-radius: 10px;
 	text-align: center;

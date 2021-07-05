@@ -27,6 +27,7 @@ export const Wrapper = styled.div`
 `
 
 export const Caption = styled.span`
+	cursor: default;
 	background: ${colors.violet};
 	border-radius: 10px;
 	padding: 5px 0px;

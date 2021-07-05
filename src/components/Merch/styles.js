@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-	margin: 200px 90px;
+	margin: 150px 90px;
 	display: grid;
 	grid-template-columns: 1fr;
 	@media screen and (min-width: 768px) {
