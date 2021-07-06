@@ -9,10 +9,8 @@ export function About() {
 			<Wrapper className="Container">
 				<div>
 					<h2>
-						Why does{" "}
-						<span className="underline">
-							1940<span className="violet">seven</span>{" "}
-						</span>{" "}
+						Why does {/* <span className="underline"> */}
+						1940<span className="violet">seven</span> {/* </span>{" "} */}
 						exist?
 					</h2>
 					<p>

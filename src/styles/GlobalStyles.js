@@ -43,7 +43,7 @@ export const GlobalStyles = createGlobalStyle`
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-    line-height: 28px;
+    line-height: 30px;
 
     @media screen and (min-width: 768px) {
       margin: auto;
@@ -170,43 +170,15 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-
   .underline{
     border-bottom: 2px solid ${colors.violet};
     padding-bottom: 5px;
   }
+
   .is-current{
     > a {
       border-bottom: 4px solid ${colors.violet};
       padding-bottom: 3px;
-    }
-  }
-  
-  .is-current-mobile{
-    > a {
-      &:after {
-        content: " •"
-      }
-    }
-  }
-
-
-  .buy-button{
-    background: ${colors.primary};
-    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid ${colors.primary};
-    > h4 {
-      color: ${colors.white};
-      padding: 10px 9px;
-      margin: 0px;
-      text-transform: capitalize;
-    }
-    &:hover{
-      background: ${colors.secondary};
-      border: 1px solid ${colors.secondary};
-    }
-    &:focus{
-      outline: none;
     }
   }
 

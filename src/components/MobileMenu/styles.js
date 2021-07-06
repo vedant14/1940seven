@@ -40,6 +40,7 @@ export const NavScroll = styled(Scrollspy)`
   li {
     transition: all 0.5s ease;
     cursor: pointer;
+    width: 100%;
     margin: 20px 0;
     font-family: Epilogue, sans-serif;
     font-style: normal;

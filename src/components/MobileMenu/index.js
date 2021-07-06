@@ -14,9 +14,11 @@ export function MobileMenu({ menuOpen, items, setMenuOpen }) {
           offset={-64}
         >
           {items.map(item => (
-            <li key={item.id} onClick={() => setMenuOpen(false)}>
-              <AnchorLink href={`#${item.link}`}>{item.name}</AnchorLink>
-            </li>
+            <AnchorLink href={`#${item.link}`}>
+              <li key={item.id} onClick={() => setMenuOpen(false)}>
+                {item.name}
+              </li>
+            </AnchorLink>
           ))}
         </NavScroll>
       </Wrapper>
