@@ -22,10 +22,11 @@ export function Details() {
 				ref={domRef}
 			>
 				<Big>01</Big>
-				<h3>
-					Creators list <br /> your merchandise
-				</h3>
-				<p>Made in India:)</p>
+				<h3>In India. In INR.</h3>
+				<p>
+					You won't have to take out your credit card for buying merch in $. Buy
+					in ₹.
+				</p>
 			</div>
 			<div
 				className={`slide-in-section second-slide ${
@@ -34,11 +35,11 @@ export function Details() {
 				ref={domRef}
 			>
 				<Big>02</Big>
-				<h3>
-					Supporters buy <br />
-					the merchandise
-				</h3>
-				<p>We take care of the logistics</p>
+				<h3>Faster Delivery</h3>
+				<p>
+					No more international shipping. Your merch will be made in India and
+					shipped from India.
+				</p>
 			</div>
 			<div
 				className={`slide-in-section third-slide ${
@@ -47,11 +48,11 @@ export function Details() {
 				ref={domRef}
 			>
 				<Big>03</Big>
-				<h3>
-					Creators get <br />
-					their share
-				</h3>
-				<p>Instantly! As soon as the return period is over.</p>
+				<h3>Orignal Merch</h3>
+				<p>
+					We work with your favorite creators to bring you orignal designs that
+					you'll love.
+				</p>
 			</div>
 		</Wrapper>
 	)

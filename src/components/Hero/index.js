@@ -9,14 +9,14 @@ export function Hero() {
 	React.useEffect(() => setVisible(true), [])
 	console.log(isVisible)
 	return (
-		<div id="Home">
+		<div id="Home" className="mb-100">
 			<HeaderImage src={BannerDesktop} alt="BannerDesktop" />
 			<div className="Container">
 				<HeaderText
 					className={`fade-in-slow-section ${isVisible ? "is-visible" : ""}`}
 					ref={domRef}
 				>
-					Support your favorite creators
+					Licensed Merch from your favorite creators! :)
 				</HeaderText>
 			</div>
 		</div>

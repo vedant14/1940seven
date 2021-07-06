@@ -4,7 +4,7 @@ import { colors } from "../../styles/GlobalStyles"
 export const Wrapper = styled.div`
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-gap: 10px;
+	grid-gap: 30px;
 	@media screen and (min-width: 768px) {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -24,7 +24,6 @@ export const Big = styled.span`
 	font-family: "Poppins", sans-serif;
 	/*position: inherit;*/
 	position: absolute;
-
 	cursor: default;
 	user-select: none;
 	--webkit-user-select: none;

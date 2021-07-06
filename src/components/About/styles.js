@@ -14,7 +14,9 @@ export const Wrapper = styled.div`
 	> div:first-child {
 		max-width: 100%;
 		> p {
-			margin-top: 65px;
+			@media screen and (min-width: 1440px) {
+				margin-top: 50px;
+			}
 		}
 	}
 	> div:last-child {

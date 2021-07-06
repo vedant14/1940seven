@@ -7,7 +7,6 @@ import {
 	Merch,
 	LineUp,
 	Details,
-	ValueStrip,
 	About,
 	Action,
 	Footer,
@@ -21,7 +20,7 @@ const IndexPage = () => {
 			<Hero />
 			<Merch />
 			<LineUp />
-			<ValueStrip />
+			<Action />
 			<About />
 			<Details />
 			<Action />

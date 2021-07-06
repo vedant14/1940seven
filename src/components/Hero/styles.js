@@ -15,7 +15,7 @@ export const HeaderImage = styled.img`
 		object-position: bottom;
 	}
 	@media (min-width: 1920px) {
-		height: 70vh;
+		height: 90vh;
 		object-position: bottom;
 	}
 `
@@ -30,6 +30,7 @@ export const HeaderText = styled.h1`
 	max-width: 300px;
 	padding: 200px 0px 350px 0px;
 	margin: auto;
+
 	@media (min-width: 768px) {
 		text-align: right;
 		padding: 130px 0px 130px 0px;
@@ -41,12 +42,12 @@ export const HeaderText = styled.h1`
 		margin: 0px 0px 0px auto;
 	}
 	@media (min-width: 1220px) {
-		max-width: 500px;
-		padding: 220px 0px 330px 0px;
+		max-width: 650px;
+		padding: 280px 0px 330px 0px;
 		margin: 0px 0px 0px auto;
 	}
-	@media (min-width: 1920px) {
+	/*@media (min-width: 1920px) {
 		padding: 550px 0px 600px 0px;
 		margin: 0px 0px 0px auto;
-	}
+	}*/
 `

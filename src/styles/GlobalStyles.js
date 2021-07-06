@@ -94,7 +94,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     line-height: 20px;
     @media screen and (min-width: 768px) {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 28px;
     }
   }
@@ -150,6 +150,9 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-text-stroke-color: #fff;
   }
 
+  .violet-wo{
+    color: ${colors.violet};
+  }
 
 
   .Container {
@@ -206,6 +209,7 @@ export const GlobalStyles = createGlobalStyle`
     visibility: hidden;
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     will-change: opacity, visibility;
+    transition-delay: 0.5s;
   }
   
   .fade-in-slow-section {
@@ -214,6 +218,7 @@ export const GlobalStyles = createGlobalStyle`
     visibility: hidden;
     transition: opacity 1s ease-out, transform 1s ease-out;
     will-change: opacity, visibility;
+    transition-delay: 0.5s;
   }
   
 
@@ -223,7 +228,15 @@ export const GlobalStyles = createGlobalStyle`
     visibility: visible;
   }
 
+  .mb-100 {
+    @media (min-width: 1920px) {
+      margin-bottom: 100px;
+    }
+  }
 
+  .zero-mg{
+    margin-top: -20px !important;
+  }
   .slick-arrow:before {
     color: ${colors.primaryBlack};
   }

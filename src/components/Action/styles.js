@@ -3,7 +3,7 @@ import { colors } from "../../styles/GlobalStyles"
 export const Wrapper = styled.div`
 	text-align: center;
 	margin-top: 200px;
-	margin-bottom: 200px;
+	margin-bottom: 50px;
 	> h2 {
 		margin: auto;
 		width: 1000px;

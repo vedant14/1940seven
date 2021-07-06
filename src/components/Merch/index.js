@@ -18,23 +18,33 @@ export function Merch() {
 		<>
 			<Scroll id="Learn" />
 			<Wrapper className="Container">
-				<div>
+				<div id="first">
 					<h2>In India. In INR. </h2>
 					<p>
-						Now you can Buy merchandise from your favorite creators. Now you can
-						Buy merchandise from your favorite creators. Now you can Buy
-						merchandise from your favorite creators
+						Now you can buy licensed merchandise from your favorite creators,
+						artists, influencers.
 					</p>
-					<AnchorLink href="#About">Learn more</AnchorLink>
+					<p>
+						1940<span className="violet-wo">seven</span> is working with the
+						best creators around the world, creators who are known for
+						challenging the status quo.
+					</p>
+					<p>
+						And now, you can buy all their merchandise in India, in our local
+						currency.
+					</p>
+					<AnchorLink href="#About">Keep reading</AnchorLink>
 				</div>
-				<img src={MerchImage} alt="Merch" id="Merch" />
-				<img
-					src={Cart}
-					alt="Cart"
-					id="Cart"
-					className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
-					ref={domRef}
-				/>
+				<div id="second">
+					<img src={MerchImage} alt="Merch" id="Merch" />
+					<img
+						src={Cart}
+						alt="Cart"
+						id="Cart"
+						className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+						ref={domRef}
+					/>
+				</div>
 			</Wrapper>
 		</>
 	)

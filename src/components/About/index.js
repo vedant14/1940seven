@@ -18,18 +18,22 @@ export function About() {
 			<Wrapper className="Container">
 				<div>
 					<h2>
-						Why does {/* <span className="underline"> */}
-						1940<span className="violet">seven</span> {/* </span>{" "} */}
-						exist?
+						Why shop from 1940<span className="violet">seven</span> ?
 					</h2>
 					<p>
 						We like our creators just as much as you do. They make the world
-						seem grander. But representing them in India does not come cheap.
-						<br />
+						seem grander. But supporting them in India does not come cheap.
+					</p>
+					<p>
 						<strong>
-							International merchandise is sold in dollars. <br />
-							And shipping to India is even more expensive
+							International merchandise is sold in dollars and shipping
+							internationally comes with its own headaches.
 						</strong>
+					</p>
+					<p>
+						We work with these creators to bring their designs to audiences in
+						India. Now, supporters like us can easily shop from creators around
+						the world.
 					</p>
 				</div>
 				<div>
@@ -39,21 +43,21 @@ export function About() {
 						className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
 						ref={domRef}
 					>
-						Faster shipping
+						In India. In INR.
 					</Caption>
 					<Caption
 						id="second"
 						className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
 						ref={domRef}
 					>
-						Lower Price{" "}
+						Faster Delivery
 					</Caption>
 					<Caption
 						id="third"
 						className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
 						ref={domRef}
 					>
-						Made in India
+						Orignal Merch
 					</Caption>
 				</div>
 			</Wrapper>

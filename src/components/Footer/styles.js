@@ -3,6 +3,7 @@ import { colors } from "../../styles/GlobalStyles"
 
 export const FooterWrapper = styled.div`
 	background: linear-gradient(180deg, #062b68 0%, #914fff 100%);
+	margin-top: 100px;
 	> div:first-child {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -38,7 +39,7 @@ export const FooterWrapper = styled.div`
 				> a {
 					border: none;
 					> img {
-						height: 21px;
+						height: auto;
 						margin: 5px 10px;
 					}
 				}

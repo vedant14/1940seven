@@ -4,6 +4,7 @@ import { FooterWrapper, LastStrip } from "./styles"
 import Logo from "../../images/logo/logo-white.png"
 import TwitterIcon from "../../images/icons/twitter.png"
 import FacebookIcon from "../../images/icons/facebook.png"
+import MailIcon from "../../images/icons/mail.png"
 
 import InstagramIcon from "../../images/icons/instagram.png"
 export function Footer() {
@@ -13,8 +14,8 @@ export function Footer() {
 				<div>
 					<img src={Logo} alt="Logo" id="Logo" />
 					<p>
-						Vedant is writing a small description to be displayed on the footer
-						to make it simple.
+						Now you can buy licensed merchandise from your favorite creators,
+						artists, influencers.
 					</p>
 				</div>
 				<div id="right-align">
@@ -25,24 +26,21 @@ export function Footer() {
 						<Link to="/refund-policy">Refund Policy</Link>
 					</div>
 					<div id="social">
-						<p>Follow us on:</p>
+						<p>Stay connected:</p>
 						<a
 							href="https://www.w3schools.com/css/css3_2dtransforms.asp"
 							target="_blank"
 						>
 							<img src={TwitterIcon} />
 						</a>
-						<a
-							href="https://www.w3schools.com/css/css3_2dtransforms.asp"
-							target="_blank"
-						>
+						<a href="https://www.facebook.com/1940seven" target="_blank">
 							<img src={FacebookIcon} />
 						</a>
-						<a
-							href="https://www.w3schools.com/css/css3_2dtransforms.asp"
-							target="_blank"
-						>
+						<a href="https://instagram.com/1940.seven" target="_blank">
 							<img src={InstagramIcon} />
+						</a>
+						<a href="https://instagram.com/1940.seven" target="_blank">
+							<img src={MailIcon} />
 						</a>
 					</div>
 				</div>

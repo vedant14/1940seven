@@ -20,7 +20,12 @@ export function LineUp() {
 			<Wrapper className="Container">
 				<h2>Creator Line Up</h2>
 				<p>
-					We are collaborating with some of the best creators around the world.
+					1940<span className="violet-wo">seven</span> will soon be launching
+					licensed merchandise from your favorite creators.
+				</p>
+				<p className="zero-mg">
+					Stay connected to hear about the reveal.{" "}
+					<a href="www.google.com">Notify me!</a>
 				</p>
 				<CardList
 					className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
