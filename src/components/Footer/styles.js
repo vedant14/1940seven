@@ -18,8 +18,10 @@ export const FooterWrapper = styled.div`
 			margin-bottom: 10px;
 			margin-top: 30px;
 			&#right-align {
-				margin-left: auto;
-				margin-right: 0px;
+				@media screen and (min-width: 768px) {
+					margin-left: auto;
+					margin-right: 0px;
+				}
 			}
 			> p {
 				margin-top: 12px;
