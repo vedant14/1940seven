@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import { FooterWrapper, LastStrip } from "./styles"
 import Logo from "../../images/logo/logo-white.png"
 import TwitterIcon from "../../images/icons/twitter.png"
+import FacebookIcon from "../../images/icons/facebook.png"
+
 import InstagramIcon from "../../images/icons/instagram.png"
 export function Footer() {
 	return (
@@ -29,6 +31,12 @@ export function Footer() {
 							target="_blank"
 						>
 							<img src={TwitterIcon} />
+						</a>
+						<a
+							href="https://www.w3schools.com/css/css3_2dtransforms.asp"
+							target="_blank"
+						>
+							<img src={FacebookIcon} />
 						</a>
 						<a
 							href="https://www.w3schools.com/css/css3_2dtransforms.asp"
