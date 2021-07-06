@@ -11,12 +11,17 @@ export const FooterWrapper = styled.div`
 			grid-template-columns: 1fr 1fr;
 		}
 		> div {
-			margin-bottom: 60px;
-			margin-top: 60px;
-
+			@media screen and (min-width: 768px) {
+				margin-bottom: 60px;
+				margin-top: 60px;
+			}
+			margin-bottom: 10px;
+			margin-top: 30px;
 			> p {
 				margin-top: 12px;
-				width: 400px;
+				@media screen and (min-width: 768px) {
+					width: 400px;
+				}
 				line-height: 20px;
 			}
 			> div#social {
@@ -33,10 +38,20 @@ export const FooterWrapper = styled.div`
 				}
 			}
 			> div#links {
-				margin: 30px auto;
+				display: grid;
+				margin: 20px auto;
+				grid-template-columns: 1fr;
+				@media screen and (min-width: 768px) {
+					display: flex;
+					margin: 30px auto;
+				}
 				> a {
 					border: none;
 					margin-right: 25px;
+					margin-bottom: 5px;
+					@media screen and (min-width: 768px) {
+						margin-bottom: 0px;
+					}
 				}
 			}
 		}

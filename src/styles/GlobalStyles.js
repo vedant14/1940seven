@@ -87,7 +87,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  p {
+  p,a {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -103,25 +103,13 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 500;
   }
 
-  small {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    border-bottom: 2px solid ${colors.violet};
-    padding-bottom: 2px;
-  }
 
   a {
     text-decoration: none;
     border-bottom: 2px solid ${colors.violet};
+    font-weight: 500;
     padding-bottom: 5px;
     color: ${colors.white};
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 20px; 
     transition-duration: 0.35s;
     transition-timing-function: ease;
     &:hover {
