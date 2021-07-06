@@ -1,19 +1,23 @@
 import styled from "styled-components"
-import BannerDesktop from "../../images/banner/hero-desktop.png"
-import BannerMobile from "../../images/banner/hero-mobile.png"
+import BannerDesktop from "../../images/banner/hero-desktop.jpeg"
+import BannerMobile from "../../images/banner/hero-mobile.jpeg"
 
 export const HeroWrapper = styled.div`
 	object-fit: cover;
 	background-repeat: no-repeat;
 	background-image: url(${BannerMobile});
 	@media (min-width: 768px) {
-		background-size: 100%;
 		background-image: url(${BannerDesktop});
 	}
+	background-size: 100%;
 	background-position: bottom;
 `
 
 export const HeaderText = styled.h1`
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
 	text-align: center;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	max-width: 300px;

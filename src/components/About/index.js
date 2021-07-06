@@ -3,6 +3,15 @@ import { Wrapper, Caption } from "./styles"
 import { Scroll } from "../Scroll"
 import India from "../../images/banner/india.png"
 export function About() {
+	const [isVisible, setVisible] = React.useState(true)
+	const domRef = React.useRef()
+	React.useEffect(() => {
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => setVisible(entry.isIntersecting))
+		})
+		observer.observe(domRef.current)
+		return () => observer.unobserve(domRef.current)
+	}, [])
 	return (
 		<>
 			<Scroll id="About" />
@@ -25,9 +34,27 @@ export function About() {
 				</div>
 				<div>
 					<img src={India} />
-					<Caption id="first">Faster shipping</Caption>
-					<Caption id="second">Lower Price </Caption>
-					<Caption id="third">Made in India</Caption>
+					<Caption
+						id="first"
+						className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+						ref={domRef}
+					>
+						Faster shipping
+					</Caption>
+					<Caption
+						id="second"
+						className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+						ref={domRef}
+					>
+						Lower Price{" "}
+					</Caption>
+					<Caption
+						id="third"
+						className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+						ref={domRef}
+					>
+						Made in India
+					</Caption>
 				</div>
 			</Wrapper>
 		</>

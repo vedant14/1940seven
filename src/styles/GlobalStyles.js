@@ -133,6 +133,17 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+
+  small {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom: 2px solid ${colors.violet};
+    padding-bottom: 2px;
+  }
+
+
   .violet {
     color: ${colors.violet};
     -webkit-text-stroke-width: 1px;
@@ -169,6 +180,49 @@ export const GlobalStyles = createGlobalStyle`
       padding-bottom: 3px;
     }
   }
+
+  .slide-in-section {
+    opacity: 0;
+    transform: translateX(-20vh);
+    visibility: hidden;
+    will-change: opacity, visibility;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .first-slide{
+    transition-delay: 0.1s
+  }
+
+  .second-slide{
+    transition-delay: 0.5s
+  }
+
+  .third-slide{
+    transition-delay: 1s
+  }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(10vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, visibility;
+  }
+  
+  .fade-in-slow-section {
+    opacity: 0;
+    transform: translateY(10vh);
+    visibility: hidden;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    will-change: opacity, visibility;
+  }
+  
+
+  .is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
 
   .slick-arrow:before {
     color: ${colors.primaryBlack};

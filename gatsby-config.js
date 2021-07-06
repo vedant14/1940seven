@@ -60,7 +60,7 @@ module.exports = {
         background_color: `#5C48D7`,
         theme_color: `#5C48D7`,
         display: `minimal-ui`,
-        icon: `src/images/newFav.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/logo/logo-square.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
