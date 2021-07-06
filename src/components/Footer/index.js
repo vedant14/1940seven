@@ -15,7 +15,7 @@ export function Footer() {
 						to make it simple.
 					</p>
 				</div>
-				<div>
+				<div id="right-align">
 					<div id="links">
 						<Link to="/">Home</Link>
 						<Link to="/terms">T&Cs</Link>
