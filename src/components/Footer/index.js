@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { FooterWrapper, LastStrip } from "./styles"
 import Logo from "../../images/logo/logo-white.png"
-import TwitterIcon from "../../images/social/twitter.png"
-import InstagramIcon from "../../images/social/instagram.png"
+import TwitterIcon from "../../images/icons/twitter.png"
+import InstagramIcon from "../../images/icons/instagram.png"
 export function Footer() {
 	return (
 		<FooterWrapper>
