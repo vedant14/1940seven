@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
 export const Wrapper = styled.div`
 	display: grid;
-	margin-top: 100px;
 	position: relative;
 	grid-template-columns: 1fr;
 	@media screen and (min-width: 768px) {
@@ -36,16 +35,25 @@ export const Caption = styled.span`
 	border-radius: 10px;
 	padding: 5px 0px;
 	text-align: center;
-	width: 200px;
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 20px;
+	font-size: 16px;
+	@media screen and (min-width: 768px) {
+		font-size: 18px;
+		width: 150px;
+		right: 20px;
+	}
+	@media screen and (min-width: 1024px) {
+		font-size: 18px;
+		width: 200px;
+		right: 90px;
+	}
+	width: 140px;
+	right: 40px;
 	position: absolute;
 	z-index: 10;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	left: auto;
-	right: 90px;
 
 	&#second {
 		top: 30%;

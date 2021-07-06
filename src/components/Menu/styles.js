@@ -1,22 +1,14 @@
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
 
-export const Nav = styled.ul`
+export const Nav = styled.div`
   display: none;
   list-style-type: none;
   padding: 0;
   text-transform: uppercase;
-  margin: 10px auto;
-  @media screen and (min-width: 728px) {
-    margin: 10px 200px 10px auto;
-  }
-  @media screen and (min-width: 1920px) {
-    margin: 10px 560px 10px auto;
-  }
-
-  a {
-    text-decoration: none;
-    color: ${colors.washedBlack};
+  margin: 0px 0px 0px auto;
+  > ul {
+    margin: 5px 0px;
   }
 
   ul > li {
@@ -28,6 +20,7 @@ export const Nav = styled.ul`
     font-size: 18px;
     line-height: 18px;
     padding: 15px 0px;
+    margin-right: 30px;
     @media screen and (min-width: 1150px) {
       margin-right: 30px;
     }
@@ -45,7 +38,7 @@ export const Nav = styled.ul`
     }
   }
 
-  @media screen and (min-width: 1150px) {
+  @media screen and (min-width: 1024px) {
     display: block;
   }
 `

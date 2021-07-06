@@ -1,13 +1,6 @@
 import React from "react"
 // Styles
-import { Link } from "gatsby"
-import {
-  OverrideGlobalStyle,
-  NavScroll,
-  Wrapper,
-  PrimaryButton,
-  SecondaryButton,
-} from "./styles"
+import { OverrideGlobalStyle, NavScroll, Wrapper, BoxLink } from "./styles"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
 export function MobileMenu({ menuOpen, items, setMenuOpen }) {
@@ -17,11 +10,11 @@ export function MobileMenu({ menuOpen, items, setMenuOpen }) {
       <Wrapper menuOpen={menuOpen}>
         <NavScroll
           items={items.map(item => item.link)}
-          currentClassName="is-current"
+          currentClassName="is-current-mobile"
           offset={-64}
         >
           {items.map(item => (
-            <li key={item.id}>
+            <li key={item.id} onClick={() => setMenuOpen(false)}>
               <AnchorLink href={`#${item.link}`}>{item.name}</AnchorLink>
             </li>
           ))}

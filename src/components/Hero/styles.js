@@ -1,27 +1,41 @@
 import styled from "styled-components"
-import Banner from "../../images/banner/hero-desktop.png"
+import BannerDesktop from "../../images/banner/hero-desktop.png"
+import BannerMobile from "../../images/banner/hero-mobile.png"
 
 export const HeroWrapper = styled.div`
-	background-image: url(${Banner});
 	object-fit: cover;
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
+	background-image: url(${BannerMobile});
+	@media (min-width: 768px) {
+		background-size: 100%;
+		background-image: url(${BannerDesktop});
+	}
+	background-position: bottom;
 `
 
 export const HeaderText = styled.h1`
-	text-align: right;
+	text-align: center;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-	margin: 0px 90px 0px auto;
 	max-width: 300px;
-	padding: 250px 0px 300px 0px;
+	padding: 200px 0px 350px 0px;
+	margin: auto;
 	@media (min-width: 768px) {
-		max-width: 400px;
+		text-align: right;
+		padding: 130px 0px 130px 0px;
 		margin: 0px 90px 0px auto;
 	}
 	@media (min-width: 1024px) {
-		max-width: 450px;
-		margin: 0px 400px 0px auto;
+		max-width: 500px;
+		padding: 150px 0px 150px 0px;
+		margin: 0px 100px 0px auto;
+	}
+	@media (min-width: 1220px) {
+		max-width: 500px;
+		padding: 220px 0px 330px 0px;
+		margin: 0px 100px 0px auto;
+	}
+	@media (min-width: 1920px) {
+		padding: 550px 0px 600px 0px;
+		margin: 0px 500px 0px auto;
 	}
 `

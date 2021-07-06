@@ -25,8 +25,13 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;    
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 40px;
+    line-height: 40px;
     @media screen and (min-width: 768px) {
+      font-size: 50px;
+      line-height: 45px;
+    }
+    @media screen and (min-width: 1024px) {
       font-size: 70px;
       line-height: 70px;
     }
@@ -34,21 +39,37 @@ export const GlobalStyles = createGlobalStyle`
 
   h2{
     font-family: 'Poppins', sans-serif;    
+    margin: 0px;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 32px;
+    line-height: 28px;
+
     @media screen and (min-width: 768px) {
+      margin: auto;
+      font-size: 44px;
+      line-height: 38px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin: auto;
       font-size: 50px;
       line-height: 52px;
     }
+    
+
   }
 
   h3{
     font-family: 'Poppins', sans-serif;    
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 20px;
     @media screen and (min-width: 768px) {
+      font-size: 32px;
+      line-height: 28px;
+    }
+    @media screen and (min-width: 1024px) {
       font-size: 42px;
       line-height: 47px;
     }
@@ -57,8 +78,9 @@ export const GlobalStyles = createGlobalStyle`
   h4{
     font-family: 'Poppins', sans-serif;    
     font-style: normal;
-    font-size: 14px;
     font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
     @media screen and (min-width: 768px) {
       font-size: 30px;
       line-height: 40px;
@@ -69,8 +91,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 20px;
     @media screen and (min-width: 768px) {
       font-size: 18px;
       line-height: 28px;
@@ -109,6 +131,20 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  li {
+    color: ${colors.washedBlack};
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    > strong{
+      color: ${colors.primaryBlack};
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
   .violet {
     color: ${colors.violet};
     -webkit-text-stroke-width: 1px;
@@ -120,10 +156,17 @@ export const GlobalStyles = createGlobalStyle`
   .Container {
     margin: auto 30px;
     @media screen and (min-width: 768px) {
-      margin: auto 90px;
+      margin: auto 60px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin: auto 60px;
+    }
+    @media screen and (min-width: 1324px) {
+      margin: auto 150px;
     }
     @media screen and (min-width: 1920px) {
-      margin: 200px 400px;
+      max-width: 1400px;
+      margin: auto;
     }
   }
 
@@ -141,7 +184,6 @@ export const GlobalStyles = createGlobalStyle`
   
   .is-current-mobile{
     > a {
-      color: ${colors.white} !important;
       &:after {
         content: " •"
       }

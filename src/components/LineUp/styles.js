@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
 
 export const Wrapper = styled.div`
-	margin-top: 200px;
 	> p {
 		margin-top: 10px;
 	}
@@ -10,10 +9,11 @@ export const Wrapper = styled.div`
 
 export const CardList = styled.div`
 	display: grid;
-	margin-top: 80px;
+	margin-top: 30px;
 	grid-template-columns: 1fr;
 	grid-template-areas: "first" "card";
 	@media screen and (min-width: 768px) {
+		margin-top: 80px;
 		grid-gap: 30px;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-areas: "first first card";
@@ -30,6 +30,15 @@ export const Card = styled.div`
 	position: relative;
 	overflow: hidden;
 	height: 380px;
+	@media screen and (min-width: 768px) {
+		height: 280px;
+	}
+	@media screen and (min-width: 1024px) {
+		height: 380px;
+	}
+	@media screen and (min-width: 1920px) {
+		height: 380px;
+	}
 	border-radius: 10px;
 	text-align: center;
 	cursor: pointer;
@@ -40,12 +49,19 @@ export const Card = styled.div`
 	);
 	> img {
 		left: 0;
+		object-fit: cover;
 		position: absolute;
 		z-index: -1;
+		height: 100%;
+		@media screen and (min-width: 1024px) {
+			width: auto;
+			height: auto;
+		}
 		max-width: 100%;
 		filter: blur(10px);
 	}
 	> img#lock {
+		height: auto;
 		left: auto;
 		z-index: 1;
 		top: 30%;
@@ -58,10 +74,16 @@ export const Card = styled.div`
 		transition-duration: 0.35s;
 		transition-timing-function: ease;
 	}
-	&:first-child {
+	&#first {
 		grid-area: first;
 	}
-	grid-area: card;
+	&#second {
+		grid-area: card;
+		display: none;
+		@media screen and (min-width: 768px) {
+			display: block;
+		}
+	}
 
 	&:hover {
 		> small {

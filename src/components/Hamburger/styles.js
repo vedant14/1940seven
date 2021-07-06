@@ -1,39 +1,36 @@
 import styled from "styled-components"
-
+import { colors } from "../../styles/GlobalStyles"
 export const HamburgerIcon = styled.div`
   display: block;
   width: 30px;
   z-index: 1000;
   cursor: pointer;
-  margin: auto 0px auto auto;
+  margin: auto 10px auto auto;
 
-  :after,
   :before,
   div {
-    background-color: white;
+    background-color: ${colors.white};
     border-radius: 2px;
     content: "";
     display: block;
     height: 3px;
     margin: 5px 0;
-    transition: all 0.2s ease-in-out;
+    transition-duration: 0.35s;
+    transition-timing-function: ease;
   }
 
   :before {
     transform: ${props =>
-      props.menuOpen ? "translateY(10px) rotate(45deg)" : ""};
-  }
-
-  :after {
-    transform: ${props =>
-      props.menuOpen ? "translateY(-10px) rotate(-45deg)" : ""};
+      props.menuOpen ? "translateY(8px) rotate(45deg)" : ""};
+    background-color: ${colors.white};
   }
 
   div {
-    transform: ${props => (props.menuOpen ? "scale(0)" : "")};
+    transform: ${props =>
+      props.menuOpen ? "translateY(0px) rotate(-45deg)" : ""};
   }
 
-  @media screen and (min-width: 1150px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 `

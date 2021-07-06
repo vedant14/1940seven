@@ -10,15 +10,21 @@ export function Header({ page }) {
 	const [menuOpen, setMenuOpen] = useState(false)
 	const siteConfig = useSiteConfigQuery()
 	return (
-		<HeaderWrapper>
-			<LogoWrapper src={Logo} alt="Logo" />
-			<Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} id="Hamburger" />
-			<Menu items={siteConfig.menu} />
-			<MobileMenu
-				menuOpen={menuOpen}
-				setMenuOpen={setMenuOpen}
-				items={siteConfig.menu}
-			/>
+		<HeaderWrapper menuOpen={menuOpen}>
+			<div className="Container">
+				<LogoWrapper src={Logo} alt="Logo" />
+				<MobileMenu
+					menuOpen={menuOpen}
+					setMenuOpen={setMenuOpen}
+					items={siteConfig.menu}
+				/>
+				<Hamburger
+					menuOpen={menuOpen}
+					setMenuOpen={setMenuOpen}
+					id="Hamburger"
+				/>
+				<Menu items={siteConfig.menu} />
+			</div>
 		</HeaderWrapper>
 	)
 }
