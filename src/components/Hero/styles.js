@@ -1,16 +1,23 @@
 import styled from "styled-components"
-import BannerDesktop from "../../images/banner/hero-desktop.jpeg"
-import BannerMobile from "../../images/banner/hero-mobile.jpeg"
 
-export const HeroWrapper = styled.div`
+export const HeaderImage = styled.img`
 	object-fit: cover;
-	background-repeat: no-repeat;
-	background-image: url(${BannerMobile});
+	position: absolute;
+	width: 100%;
+	height: 80vh;
+	object-position: 30%;
 	@media (min-width: 768px) {
-		background-image: url(${BannerDesktop});
+		height: 45vh;
+		object-position: bottom;
 	}
-	background-size: 100%;
-	background-position: bottom;
+	@media (min-width: 1340px) {
+		height: 90vh;
+		object-position: bottom;
+	}
+	@media (min-width: 1920px) {
+		height: 70vh;
+		object-position: bottom;
+	}
 `
 
 export const HeaderText = styled.h1`
@@ -26,20 +33,20 @@ export const HeaderText = styled.h1`
 	@media (min-width: 768px) {
 		text-align: right;
 		padding: 130px 0px 130px 0px;
-		margin: 0px 90px 0px auto;
+		margin: 0px 0px 0px auto;
 	}
 	@media (min-width: 1024px) {
 		max-width: 500px;
 		padding: 150px 0px 150px 0px;
-		margin: 0px 100px 0px auto;
+		margin: 0px 0px 0px auto;
 	}
 	@media (min-width: 1220px) {
 		max-width: 500px;
 		padding: 220px 0px 330px 0px;
-		margin: 0px 100px 0px auto;
+		margin: 0px 0px 0px auto;
 	}
 	@media (min-width: 1920px) {
 		padding: 550px 0px 600px 0px;
-		margin: 0px 500px 0px auto;
+		margin: 0px 0px 0px auto;
 	}
 `
