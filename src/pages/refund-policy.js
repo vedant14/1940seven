@@ -5,11 +5,13 @@ import { Layout, SEO, Footer } from "../components"
 const RefundPolicy = ({ data }) => {
   return (
     <Layout>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.markdownRemark.html,
-        }}
-      />
+      <div className="Container">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: data.markdownRemark.html,
+          }}
+        />
+      </div>
       <Footer />
     </Layout>
   )
