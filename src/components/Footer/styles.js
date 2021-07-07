@@ -33,13 +33,14 @@ export const FooterWrapper = styled.div`
 			}
 			> div#social {
 				display: flex;
+				align-items: flex-start;
 				> p {
 					margin: 0px 20px 0px 0px;
 				}
 				> a {
 					border: none;
 					> img {
-						height: auto;
+						height: 21px;
 						margin: 5px 10px;
 					}
 				}
