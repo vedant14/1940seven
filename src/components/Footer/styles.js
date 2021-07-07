@@ -7,26 +7,26 @@ export const FooterWrapper = styled.div`
 	> div:first-child {
 		display: grid;
 		grid-template-columns: 1fr;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 1024px) {
 			grid-gap: 30px;
 			grid-template-columns: 1fr 1fr;
 		}
 		> div {
-			@media screen and (min-width: 768px) {
+			@media screen and (min-width: 1024px) {
 				margin-bottom: 60px;
 				margin-top: 60px;
 			}
 			margin-bottom: 10px;
 			margin-top: 30px;
 			&#right-align {
-				@media screen and (min-width: 768px) {
+				@media screen and (min-width: 1024px) {
 					margin-left: auto;
 					margin-right: 0px;
 				}
 			}
 			> p {
 				margin-top: 12px;
-				@media screen and (min-width: 768px) {
+				@media screen and (min-width: 1024px) {
 					width: 400px;
 				}
 				line-height: 20px;
@@ -48,7 +48,7 @@ export const FooterWrapper = styled.div`
 				display: grid;
 				margin: 20px auto;
 				grid-template-columns: 1fr;
-				@media screen and (min-width: 768px) {
+				@media screen and (min-width: 1024px) {
 					display: flex;
 					margin: 30px auto;
 				}
@@ -56,7 +56,7 @@ export const FooterWrapper = styled.div`
 					border: none;
 					margin-right: 25px;
 					margin-bottom: 5px;
-					@media screen and (min-width: 768px) {
+					@media screen and (min-width: 1024px) {
 						margin-bottom: 0px;
 					}
 				}

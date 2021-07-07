@@ -18,7 +18,7 @@ export function About() {
 			<Wrapper className="Container">
 				<div>
 					<h2>
-						Why shop from 1940<span className="violet">seven</span> ?
+						Why shop from 1940<span className="violet">seven</span>?
 					</h2>
 					<p>
 						We like our creators just as much as you do. They make the world

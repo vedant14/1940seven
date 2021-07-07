@@ -12,9 +12,9 @@ export const Wrapper = styled.div`
 	position: relative;
 	> div#first {
 		> p {
-			width: 400px;
 			max-width: 100%;
-			@media screen and (min-width: 1440px) {
+			@media screen and (min-width: 1024px) {
+				width: 400px;
 				margin-top: 50px;
 			}
 		}
