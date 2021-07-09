@@ -12,12 +12,16 @@ export const FooterWrapper = styled.div`
 			grid-template-columns: 1fr 1fr;
 		}
 		> div {
+			margin-bottom: 10px;
+			margin-top: 20px;
+			@media screen and (min-width: 728px) {
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
 			@media screen and (min-width: 1024px) {
 				margin-bottom: 60px;
 				margin-top: 60px;
 			}
-			margin-bottom: 10px;
-			margin-top: 30px;
 			&#right-align {
 				@media screen and (min-width: 1024px) {
 					margin-left: auto;

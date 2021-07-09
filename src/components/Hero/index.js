@@ -1,7 +1,6 @@
 import React from "react"
-import { HeaderText, HeaderImage } from "./styles"
+import { Wrapper, HeaderText } from "./styles"
 import BannerDesktop from "../../images/banner/hero-desktop.jpeg"
-import BannerMobile from "../../images/banner/hero-mobile.jpeg"
 
 export function Hero() {
 	const [isVisible, setVisible] = React.useState(false)
@@ -9,16 +8,15 @@ export function Hero() {
 	React.useEffect(() => setVisible(true), [])
 	console.log(isVisible)
 	return (
-		<div id="Home" className="mb-100">
-			<HeaderImage src={BannerDesktop} alt="BannerDesktop" />
+		<Wrapper id="Home">
 			<div className="Container">
 				<HeaderText
 					className={`fade-in-slow-section ${isVisible ? "is-visible" : ""}`}
 					ref={domRef}
 				>
-					Licensed Merch from your favorite creators! :)
+					<h1>Licensed Merch from your favorite creators!</h1>
 				</HeaderText>
 			</div>
-		</div>
+		</Wrapper>
 	)
 }

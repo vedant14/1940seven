@@ -1,53 +1,42 @@
 import styled from "styled-components"
-
-export const HeaderImage = styled.img`
-	object-fit: cover;
-	position: absolute;
-	width: 100%;
+import BannerDesktop from "../../images/banner/hero-desktop.jpeg"
+export const Wrapper = styled.div`
+	background-image: url(${BannerDesktop});
 	height: 80vh;
-	object-position: 30%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 30%;
 	@media (min-width: 768px) {
 		height: 45vh;
-		object-position: bottom;
+		background-position: bottom;
 	}
 	@media (min-width: 1340px) {
 		height: 90vh;
-		object-position: bottom;
+		background-position: bottom;
 	}
 	@media (min-width: 1920px) {
 		height: 90vh;
-		object-position: bottom;
+		background-position: bottom;
+	}
+	> div {
+		display: flex;
 	}
 `
 
-export const HeaderText = styled.h1`
-	animation: fadeInAnimation ease 3s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-
+export const HeaderText = styled.div`
 	text-align: center;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	position: relative;
+	text-shadow: 2px 8px 10px rgba(0, 0, 0, 0.8);
 	max-width: 300px;
-	padding: 200px 0px 350px 0px;
-	margin: auto;
-
+	margin: 50% auto;
 	@media (min-width: 768px) {
 		text-align: right;
-		padding: 130px 0px 130px 0px;
-		margin: 0px 0px 0px auto;
+		margin: 20% 0px auto auto;
 	}
 	@media (min-width: 1024px) {
-		max-width: 500px;
-		padding: 150px 0px 150px 0px;
-		margin: 0px 0px 0px auto;
+		max-width: 400px;
 	}
 	@media (min-width: 1220px) {
-		max-width: 650px;
-		padding: 280px 0px 330px 0px;
-		margin: 0px 0px 0px auto;
+		max-width: calc(650px + 1.4vw);
 	}
-	/*@media (min-width: 1920px) {
-		padding: 550px 0px 600px 0px;
-		margin: 0px 0px 0px auto;
-	}*/
 `

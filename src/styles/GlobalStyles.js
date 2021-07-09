@@ -25,15 +25,15 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;    
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 28px;
     @media screen and (min-width: 768px) {
-      font-size: 50px;
-      line-height: 45px;
+      font-size: 48px;
+      line-height: 32px;
     }
-    @media screen and (min-width: 1024px) {
-      font-size: 70px;
-      line-height: 70px;
+    @media screen and (min-width: 1200px) {
+      font-size: calc(1.725rem + 2.7vw);
+      line-height: calc(1.725rem + 2.5vw);
     }
   }
 
@@ -42,50 +42,37 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0px;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 24px;
 
     @media screen and (min-width: 768px) {
       margin: auto;
-      font-size: 44px;
-      line-height: 38px;
+      font-size: 32px;
+      line-height: 28px;
     }
     @media screen and (min-width: 1024px) {
       margin: auto;
-      font-size: 50px;
-      line-height: 52px;
+      font-size: 36px;
+      line-height: 32px;
     }
-    
-
   }
 
   h3{
     font-family: 'Poppins', sans-serif;    
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 20px;
     @media screen and (min-width: 768px) {
+      font-size: 28px;
+      line-height: 24px;
+    }
+    @media screen and (min-width: 1024px) {
       font-size: 32px;
       line-height: 28px;
     }
-    @media screen and (min-width: 1024px) {
-      font-size: 42px;
-      line-height: 47px;
-    }
   }
 
-  h4{
-    font-family: 'Poppins', sans-serif;    
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 20px;
-    @media screen and (min-width: 768px) {
-      font-size: 30px;
-      line-height: 40px;
-    }
-  }
 
   p,a {
     font-family: 'Poppins', sans-serif;
@@ -94,8 +81,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     line-height: 20px;
     @media screen and (min-width: 768px) {
-      font-size: 20px;
-      line-height: 28px;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 
