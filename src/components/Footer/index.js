@@ -14,8 +14,8 @@ export function Footer() {
 				<div>
 					<img src={Logo} alt="Logo" id="Logo" />
 					<p>
-						Now you can buy licensed merchandise from your favorite creators,
-						artists, influencers.
+						Making international merchandise, <br /> accessible for Indian
+						consumers.
 					</p>
 				</div>
 				<div id="right-align">

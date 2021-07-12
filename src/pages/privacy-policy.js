@@ -5,6 +5,7 @@ import { Layout, SEO, Footer } from "../components"
 const PrivacyPage = ({ data }) => {
   return (
     <Layout>
+      <SEO title="1940Seven" description="By Vedant and Mandar" />
       <div className="Container">
         <div
           dangerouslySetInnerHTML={{

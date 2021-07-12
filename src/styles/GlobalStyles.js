@@ -33,7 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     @media screen and (min-width: 1200px) {
       font-size: calc(1.725rem + 2.7vw);
-      line-height: calc(1.725rem + 2.5vw);
+      line-height: calc(1.525rem + 2.5vw);
     }
   }
 
